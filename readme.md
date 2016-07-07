@@ -11,7 +11,7 @@ $ cd /your/framer/project
 $ npm i mapbox-gl
 ```
 
-Next, copy / save the `MapboxLayer.coffee` file into your `modules` folder. In your Framer project you can get started as easily as:
+Next, copy / save the `MapboxLayer.coffee` file into your `modules` folder. In your Framer project add the following:
 
 ```javascript
 MapboxLayer = require 'MapboxLayer'
@@ -25,6 +25,20 @@ MapboxLayer.connect('your_mapbox_api_key')
 	width: Screen.width
 	height: Screen.height
 })
+```
+
+Each map is generated with a new instance so you can have multiple maps working independently at the same time. You can also rename your `layer` and `map` objects returned from the `.create` method:
+
+```javascript
+{ layer: layerOne, map: mapOne } = MapboxLayer.create({
+	center: [-122.356568, 47.638699]
+}, {
+	name: 'MyMapContainer'
+	width: Screen.width
+	height: Screen.height
+})
+
+layerOne.centerX()
 ```
 
 ### API
