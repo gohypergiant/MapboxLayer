@@ -18,28 +18,19 @@ MapboxLayer = require 'MapboxLayer'
 
 MapboxLayer.connect('your_mapbox_api_key')
 
-{ layer, map } = MapboxLayer.create({
+MapContainer = MapboxLayer.create({
 	center: [-122.356568, 47.638699]
 }, {
-	name: 'MyMapContainer'
-	width: Screen.width
-	height: Screen.height
-})
-```
-
-Each map is generated with a new instance so you can have multiple maps working independently at the same time. You can also rename your `layer` and `map` objects returned from the `.create` method:
-
-```javascript
-{ layer: layerOne, map: mapOne } = MapboxLayer.create({
-	center: [-122.356568, 47.638699]
-}, {
-	name: 'MyMapContainer'
-	width: Screen.width
-	height: Screen.height
+	name: 'MapContainer'
+	width: 400
+	height: 800
 })
 
-layerOne.centerX()
+MapContainer.centerX()
+MapContainer.rotationX = 15
 ```
+
+Each map is generated with a new instance so you can have multiple maps working independently at the same time. You can use `MapContainer.mapbox` to access the instantiated Mapbox map instance.
 
 ### API
 
@@ -62,7 +53,33 @@ Creates a new MapboxLayer.
 
 **Returns**
 
-`{ layer, map }` _(Object)_: The newly instantiated Framer Layer as `layer`, and the newly instantiated Mapbox Map as `map`.
+`Layer` _(Object)_: The newly instantiated Framer Layer. The Mapbox instance is attached to the Layer as the property `mapbox`.
+
+### Tips
+
+**1. Making a non-interactive map**
+```
+MapContainer = MapboxLayer.create({
+	center: [-122.356568, 47.638699]
+	interactive: false
+}, {
+	name: 'MapContainer'
+	width: 400
+	height: 800
+})
+```
+
+**2. Show Mapbox Attribution**
+```
+MapContainer = MapboxLayer.create({
+	center: [-122.356568, 47.638699]
+	attributionControl: true
+}, {
+	name: 'MapContainer'
+	width: 400
+	height: 800
+})
+```
 
 ---
 

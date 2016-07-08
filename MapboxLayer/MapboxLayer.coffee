@@ -11,6 +11,7 @@ layerDefaults =
 
 mapDefaults =
   navigation: false
+  attributionControl: false
   zoom: 12.5
   style: 'mapbox://styles/mapbox/streets-v9'
 
