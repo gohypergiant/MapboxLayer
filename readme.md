@@ -58,7 +58,7 @@ Creates a new MapboxLayer.
 ### Tips
 
 **1. Making a non-interactive map**
-```
+```javascript
 MapContainer = MapboxLayer.create({
 	center: [-122.356568, 47.638699]
 	interactive: false
@@ -70,7 +70,7 @@ MapContainer = MapboxLayer.create({
 ```
 
 **2. Show Mapbox Attribution**
-```
+```javascript
 MapContainer = MapboxLayer.create({
 	center: [-122.356568, 47.638699]
 	attributionControl: true
