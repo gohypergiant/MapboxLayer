@@ -6,6 +6,9 @@ connected = false
 # Mapbox CSS string for insertCSS method
 css = '@import "https://api.tiles.mapbox.com/mapbox-gl-js/v0.20.1/mapbox-gl.css"'
 
+layerDefaults =
+  name: 'MapboxLayer'
+
 mapDefaults =
   navigation: false
   zoom: 12.5
@@ -32,7 +35,7 @@ exports.create = (mapOptions={}, layerOptions={}) ->
 
   layer = new Layer(_.defaults {
     ignoreEvents: false
-  }, layerOptions)
+  }, layerOptions, layerDefaults)
 
   layer.classList.add(mapId)
 
@@ -47,6 +50,3 @@ exports.create = (mapOptions={}, layerOptions={}) ->
     layer: layer
     map: map
   }
-
-# TODO: Support static maps that are non interactive and ideally just PNG's
-# This will require us to use Mapbox's API instead of their SDK
