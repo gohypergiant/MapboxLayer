@@ -46,7 +46,5 @@ exports.create = (mapOptions={}, layerOptions={}) ->
   if mapOptions.navigation
     map.addControl(new mapboxgl.Navigation())
 
-  return {
-    layer: layer
-    map: map
-  }
+  layer.mapbox = map;
+  return layer
