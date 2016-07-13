@@ -1,6 +1,6 @@
 # Mapbox Framer Module
 
-![](https://cloud.githubusercontent.com/assets/935/16696844/5b3c1d62-450c-11e6-932a-624670b4980d.png)
+![](https://cloud.githubusercontent.com/assets/935/16820575/7428881a-4917-11e6-9f6b-6938e0b630a1.png)
 
 The Mapbox module gives you the ability to create powerful Mapbox maps in your prototypes. You have full control over both the Layer that holds the map and the actual map itself via the Mapbox GL JS API.
 
