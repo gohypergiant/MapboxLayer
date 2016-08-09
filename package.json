@@ -1,0 +1,34 @@
+{
+  "name": "framer-mapboxlayer",
+  "version": "1.0.0",
+  "description": "A Framer module for creating an interactive Mapbox map.",
+  "homepage": "https://github.com/bpxl-labs/MapboxLayer",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bpxl-labs/MapboxLayer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bpxl-labs/MapboxLayer/issues"
+  },
+  "main": "MapboxLayer/MapboxLayer.coffee",
+  "author": "Black Pixel",
+  "license": "MIT",
+  "keywords": [
+    "appletv",
+    "framerjs",
+    "framer",
+    "coffeescript",
+    "remote",
+    "control"
+  ],
+  "devDependencies": {
+    "publish-please": "^2.2.0"
+  },
+  "scripts": {
+    "publish-please": "publish-please",
+    "prepublish": "publish-please guard"
+  },
+  "dependencies": {
+    "mapbox-gl": "^0.21.0"
+  }
+}

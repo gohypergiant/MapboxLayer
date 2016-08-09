@@ -4,7 +4,16 @@
 
 The Mapbox module gives you the ability to create powerful Mapbox maps in your prototypes. You have full control over both the Layer that holds the map and the actual map itself via the Mapbox GL JS API.
 
-### Getting Started
+### Installation
+
+##### NPM Installation
+
+```
+$ cd /your/framer/project
+$ npm i framer-mapboxlayer --save
+```
+
+##### Manual Installation
 
 First you will need to get the Mapbox GL JS library installed to your project via NPM.
 
@@ -13,10 +22,17 @@ $ cd /your/framer/project
 $ npm i mapbox-gl
 ```
 
-Next, copy / save the `MapboxLayer.coffee` file into your `modules` folder. In your Framer project add the following:
+Next, copy / save the `MapboxLayer.coffee` file into your `modules` folder.
+
+### Adding It To Your Project
+
+In your Framer project add the following:
 
 ```javascript
+// If you manually installed
 MapboxLayer = require 'MapboxLayer'
+// Else
+MapboxLayer = require 'framer-mapboxlayer'
 
 MapboxLayer.connect('your_mapbox_api_key')
 
