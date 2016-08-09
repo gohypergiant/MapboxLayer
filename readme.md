@@ -10,14 +10,14 @@ The Mapbox module gives you the ability to create powerful Mapbox maps in your p
 
 ### Installation
 
-##### NPM Installation
+#### NPM Installation
 
 ```
 $ cd /your/framer/project
 $ npm i framer-mapboxlayer --save
 ```
 
-##### Manual Installation
+#### Manual Installation
 
 First you will need to get the Mapbox GL JS library installed to your project via NPM.
 
