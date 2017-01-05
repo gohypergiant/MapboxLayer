@@ -2,7 +2,7 @@
 
 [![license](https://img.shields.io/github/license/bpxl-labs/MapboxLayer.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](.github/CONTRIBUTING.md)
-[![Maintenance](https://img.shields.io/maintenance/yes/2016.svg)]()
+[![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)]()
 
 <img src="https://cloud.githubusercontent.com/assets/935/16820575/7428881a-4917-11e6-9f6b-6938e0b630a1.png" width="497" >
 

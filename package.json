@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/bpxl-labs/MapboxLayer/issues"
   },
-  "main": "MapboxLayer/MapboxLayer.coffee",
+  "main": "MapboxLayer.coffee",
   "author": "Black Pixel",
   "license": "MIT",
   "keywords": [
@@ -21,14 +21,7 @@
     "remote",
     "control"
   ],
-  "devDependencies": {
-    "publish-please": "^2.2.0"
-  },
-  "scripts": {
-    "publish-please": "publish-please",
-    "prepublish": "publish-please guard"
-  },
   "dependencies": {
-    "mapbox-gl": "^0.21.0"
+    "mapbox-gl": "^0.29.0"
   }
 }
