@@ -23,7 +23,7 @@ First you will need to get the Mapbox GL JS library installed to your project vi
 
 ```
 $ cd /your/framer/project
-$ npm i mapbox-gl
+$ npm i mapbox-gl@0.26.0
 ```
 
 Next, copy / save the `MapboxLayer.coffee` file into your project's `modules` folder.
