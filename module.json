@@ -1,0 +1,14 @@
+{
+    "name": "MapboxLayer",
+    "description": "Add powerful Mapbox maps to your prototypes.",
+    "author": "Brandon Pierce",
+
+    "require": "MapboxLayer = require 'MapboxLayer'",
+		"install": [
+			"MapboxLayer.coffee",
+			"README.md"
+		],
+    "example": "example.coffee",
+
+    "thumb": "thumb.png"
+}
