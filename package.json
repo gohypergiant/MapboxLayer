@@ -1,5 +1,5 @@
 {
-  "name": "framer-mapboxlayer",
+  "name": "@blackpixel/framer-mapboxlayer",
   "version": "1.1.0",
   "description": "A Framer module for creating an interactive Mapbox map.",
   "homepage": "https://github.com/bpxl-labs/MapboxLayer",
@@ -21,6 +21,9 @@
     "remote",
     "control"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "mapbox-gl": "^0.26.0"
   }
