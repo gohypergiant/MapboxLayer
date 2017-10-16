@@ -1,7 +1,7 @@
 {
     "name": "MapboxLayer",
     "description": "Add powerful Mapbox maps to your prototypes.",
-    "author": "Brandon Pierce",
+    "author": "Brandon Pierce @ BPXL",
 
     "require": "MapboxLayer = require 'MapboxLayer'",
 		"install": [
