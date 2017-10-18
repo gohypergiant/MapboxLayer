@@ -105,6 +105,9 @@ MapContainer = MapboxLayer.create({
 })
 ```
 
+### Example project
+[Download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/bpxl-labs/MapboxLayer/tree/master/example.framer) the example to try it for yourself.
+
 ---
 
 Website: [blackpixel.com](https://blackpixel.com) &nbsp;&middot;&nbsp;
