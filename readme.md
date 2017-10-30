@@ -16,7 +16,7 @@ The Mapbox module gives you the ability to create powerful Mapbox maps in your p
 
 ```
 $ cd /your/framer/project
-$ npm i framer-mapboxlayer --save
+$ npm i @blackpixel/framer-mapboxlayer --save
 ```
 
 #### Manual Installation
@@ -38,7 +38,7 @@ In your Framer project add the following:
 # If you manually installed
 MapboxLayer = require 'MapboxLayer'
 # Else
-MapboxLayer = require 'framer-mapboxlayer'
+MapboxLayer = require '@blackpixel/framer-mapboxlayer'
 
 MapboxLayer.connect('your_mapbox_api_key')
 
