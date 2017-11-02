@@ -4,7 +4,7 @@ mapboxgl = require 'mapbox-gl'
 connected = false
 
 # Mapbox CSS string for insertCSS method
-css = '@import "https://api.tiles.mapbox.com/mapbox-gl-js/v0.20.1/mapbox-gl.css"'
+css = '@import "https://api.tiles.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.css"'
 
 layerDefaults =
   name: 'MapboxLayer'
